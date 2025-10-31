@@ -1,0 +1,972 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+
+.container{
+    width:80%;
+    max-width: 1200px;
+    margin-inline:auto;
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+@media(max-width:992px) {
+    .container{
+        width: 90%;
+    }
+}
+
+
+
+/* NAVBAR */
+/* ==== NAVBAR STYLE ==== */
+.navbar {
+    /*Warnalatarbelakangnavbar*/box-shadow: 0 2px 10px rgba(0, 0, 0, 0.408);
+    /*Efekbayanganlembut*/transition: all .3s ease;
+    padding: 15px 0;
+}
+
+.navbar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.navbar-brand {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #602a60;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: #000000; /* Warna hover pada brand */
+}
+
+.nav-link {
+    color: #3e0f40;
+    font-weight: 500;
+    margin-right: 20px;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #f4aaf2; /* Warna link saat hover */
+  transform: translateY(-2px); /* Efek naik sedikit saat dihover */
+}
+
+.nav-link.active {
+    border-bottom: 3px solid #f4aaf2;
+    position: relative;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* Responsif */
+@media (max-width: 1075px) {
+    .nav-link {
+    margin-right: 0;
+    padding: 10px;
+    text-align: center; 
+}
+
+    form[role="search"] {
+    margin-top: 10px;
+    }
+}
+
+
+/* NAVBAR */
+
+
+/* HERO */
+
+#particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; /* di belakang konten hero */
+}
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+    padding-bottom: 0;
+    overflow: hidden;
+}
+
+.hero-content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    width: 100%;
+    padding: 0 40px;
+}
+
+.text-section {
+    flex: 1;
+}
+
+.text-section h3 {
+    font-size: 50px;
+    font-weight: 500;
+    font-family: 'sans-serif';
+    margin-bottom: 5px;
+    color: #f2cbf2;
+}
+
+.text-section h1 {
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'sans-serif';
+    margin-bottom: 10px;
+    color: #3e0f40;
+}
+
+.text-section h2 {
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-family: 'sans-serif';
+    color: #602a60;
+}
+
+.text-section h2 span{
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-family: 'sans-serif';
+}
+
+.hero .img{
+    width: 50%;
+    border-radius: 1000px;
+    align-content: center;
+    display: block;
+    margin: 0;
+}
+/* Tombol "About Me" */
+
+
+.btn-about {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #aa5092;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 700;
+    font-family: Quintessential;
+    transition: background-color 0.3s ease;
+}
+
+.btn-galeri{
+    display: inline-block;
+    background-color: #e1e4da;
+    padding: 10px 25px;
+    color: #3e0f40;
+    text-decoration: none;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-family: Quintessential;
+    font-weight: 700px;
+    cursor: pointer;
+}
+
+.hero .hero-content .text-section a{
+    background-color: #e1e4da;
+    padding: 10px 20px;
+    color: #3e0f40;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero .hero-content .text-section a:hover{
+    background-color:  rgb(249, 216, 240);
+}   
+
+/* Bagian ikon sosial media */
+.social-buttons {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 15px; /* jarak antar ikon */
+}
+
+.social-icons{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 15px;
+    padding: 0;
+}
+
+.social-icons li a{
+    font-size: 24px;
+    color: #000000;
+    transition: 0.3s;
+}
+
+.social-link {
+    color: #ff0000;
+    background-color: #3e0f40;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    transform: scale(1.1);
+}
+
+/* Gambar di sebelah kanan */
+.image-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.image-section img {
+    width: 80%;
+    max-width: 400px;
+    border-radius: 20px;
+}
+
+@media (max-width: 768px){
+    .hero-box h1{
+    font-size: 45px;
+    }
+}
+
+@media (max-width: 475px){
+    .hero-box h1{
+    font-size: 40px;
+    }   
+}
+/* HERO */
+
+
+header svg{
+    margin-bottom: -10px;
+}
+
+/* TENTANG */
+.tentang{
+    background-color: #f8f4f7;
+    color: #3e0f40;
+    margin-bottom: 0px;
+    padding-block: 100px;
+}
+
+.tentang .container > h1{
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 40px;
+    font-family: Quintessential;
+    font-weight: 700;
+    color: #3e0f40
+}
+
+.tentang-box .box:nth-child(1){
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 150px;
+    align-items: center;
+    gap:25px;
+}
+
+.tentang-box .box:nth-child(1) img{
+    width: 550px;
+    height: auto;
+    background-color: #f7e9f2;
+    border: 5px solid white;
+    border-radius: 10px;
+    margin-inline: auto;
+}
+
+.tentang-box .box:nth-child(1) p{
+    line-height: 2;
+    text-align: justify;
+    margin-bottom: 30;
+    font-size: 18px;
+    margin-inline: auto;
+}
+.tentang-box .box:nth-child(1) p span{
+    font-weight: bold;
+}
+
+.tentang-box .box:nth-child(1) a{
+    border:1px solid #e77ce9 ;
+    padding: 10px 20px;
+    color: rgb(201, 70, 158);
+    text-decoration: none;
+    border-radius: 5px;
+    
+}
+
+.tentang-box .box:nth-child(1) a:hover{
+    background-color: white;
+    color: #f0adf2;
+    font-weight: bold;
+}
+
+.tentang-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: -10px;
+}
+
+@media (max-width:992px){
+    .tentang-box .box:nth-child(1) {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* TENTANG */
+
+
+/* TOOLS */
+
+.tentang-box .box h1{
+    font-size: 40px;
+    font-family: Quintessential;
+    color: #3e0f40;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.tentang-box .box p{
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-family: "Poppins";
+    text-align: center;
+    font-weight: 400;
+    color: #602a60; ; 
+}
+
+.tentang-box .box .tools-box{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid rgb(184, 113, 152);
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.tentang-box .tools{
+    display: grid;
+    align-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(px, 1fr));
+    gap: 10px;
+}
+
+.tentang-box .box .tools-box:hover{
+    background-color: white;
+    color: #f0adf2;
+}
+
+.tentang-box .box .tools-box h3{
+    font-size: 20px;
+    margin-bottom:0;
+    font-family: 'sans-serif';
+    font-weight: 700;
+    color: #3e0f40
+}
+
+.tentang-box .box .tools-box p{
+    font-size: 15px;
+    margin-bottom:0;
+    font-family: "Poppins";
+    font-weight: 400;
+    color: #602a60
+}
+
+
+.tentang-box .tools .tools-box img{
+    width:60px ;
+    height: 40px;
+    background-color: white;
+    border-radius:10px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    -ms-border-radius:10px;
+    -o-border-radius:10px;
+}
+
+
+/* ini box nya jadi susun ke tengah center */
+.tentang .container .tools{
+    display: flex;
+    flex-wrap: wrap;          /* supaya otomatis turun ke baris baru */
+    justify-content: center;  /* rata tengah secara horizontal */
+    gap: 15px;                /* jarak antar kotak */
+    text-align: center;
+    padding: 20px;
+}
+
+/* TOOLS */
+
+/* EDUCATION AND ORGANIZATION */
+.education{
+    background-color:#f8f4f7;
+    margin-bottom: 0;
+    padding-bottom: 5px;
+    padding-top: 100px;
+}
+
+.education .container h2{
+    font-size: 40px;
+    font-family: Quintessential;
+    color: #3e0f40;
+    font-weight: 700;
+    text-align: center;
+}
+
+.education .container h3{
+    font-size: 20px;
+    font-family: "Poppins";
+    text-align: center;
+    font-weight: 400;
+    color: #602a60; ;
+}
+
+.education-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 2fr));
+    gap: 40px; /* inilah jarak antar grid */
+    box-shadow: 5px 5px 20px #e77ce9;
+    margin-top: 50px;
+}
+
+.education-box .box{
+    padding: 30px;
+    box-shadow: 5px 5px 20px #00000090;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.education-desc h2:last-child {
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: end;
+}
+
+.education-box .box img{
+    width: 50%;
+    border-radius: 1000px;
+    align-content: center;
+    display: block;
+    margin: 0;
+}
+
+.education-box .education-desc h5{
+    padding-top: 5px;
+    margin-bottom: 5px;
+    font-size: 30px;
+    font-family: Quintessential;
+    color: #3e0f40;
+    text-align: center;
+}
+
+.education-box .education-desc h4{
+    padding-top: 5px;
+    font-size: 18px;
+    font-family: 'sans-serif';
+    color: #3e0f40;
+    text-align: center;
+    font-weight: 100px;
+    margin: 0;
+    line-height: 2;
+}
+
+.education-box .education-desc h2{
+    padding-block: 20px;
+    font-size: 20px;
+    text-align: left;
+    font-family: 'sans-serif';
+    font-weight: 400px;
+}
+/* EDUCATION AND ORGANIZATION */
+
+/* EXPERIENCE */
+.experience {
+    background-color: #f8f4f7;
+    padding: 60px 0;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.experience .container h1{
+    text-align: center;
+    font-size: 40px;
+    color: #3e0f40;
+    padding-top: 50px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-family: Quintessential;
+}
+
+.experience .container h2{
+    font-size: 20px;
+    font-family: "Poppins";
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 30px;
+    color: #602a60; ;
+}
+
+.experience .section-title h3{
+    font-size: 20px;
+    font-family: "Poppins";
+    text-align: center;
+    font-weight: 400;
+    color: #602a60; ;
+    text-align: center;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #3e0f40;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+    border-radius: 10px;
+}
+
+/* setiap item */
+.timeline-item {
+    padding: 20px 30px;
+    position: relative;
+    width: 50%;
+}
+
+/* kiri-kanan */
+.timeline-item.left {
+    left: 0;
+}
+
+.timeline-item.right {
+    left: 50%;
+}
+
+/* titik di tengah garis */
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -13px;
+    background-color: #fff;
+    border: 4px solid #3e0f40;
+    top: 20px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline-item.right::before {
+    left: -13px;
+}
+
+/* isi konten */
+.timeline-item .content {
+    background-color: #f2cbf2;
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(232, 64, 64, 0.1);
+    color: #3e0f40;
+}
+
+.timeline-item .content h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-weight: 700;
+    font-family: 'sans-serif';
+}
+
+.timeline-item .content h4 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-family: 'Poppins';
+}
+
+.timeline-item .content p {
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Responsif */
+@media screen and (max-width: 768px) {
+.timeline::after {
+    left: 31px;
+}
+
+.timeline-item {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+}
+
+.timeline-item.right {
+    left: 0%;
+}
+
+.timeline-item::before {
+    left: 15px;
+}
+}
+
+/* EXPERIENCE */
+
+
+/* PROJECTS */
+
+.project{
+    background-color: white;
+    padding-top: 100px;
+}
+
+
+.project .container >h1{
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: Quintessential;
+    color: #3e0f40;
+}
+
+
+.project .container .project-box .box .project-desc >h2{
+    margin-bottom: 10px;
+    font-size: 25px;
+    color: #3e0f40;
+    text-align: center;
+    font-family: Quientessential;
+}
+
+.project .container .project-box .box .project-desc >h5{
+    font-size: 18px;
+    color: #cd9ccf;
+    text-align: center;
+    font-weight: 200px;
+    font-family: 'sans-serif';
+
+}
+
+.project-box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap : 10px;
+    margin-top: 50px;
+    border-color: none;
+}
+
+.project-box .box{
+    padding: 10px;
+    box-shadow: 5px 5px 20px #e77ce9;
+    border-radius: 10px;
+}
+
+.project-box .box img{
+    width: 100%;
+    border-radius: 0px;
+    padding-bottom: 20px;
+}
+
+.project .project-box .project-desc>h2{
+    color: #3e0f40;
+}
+
+.project-box .project-desc{
+    margin-top: 20px;
+
+}
+
+.project-box .project-desc p{
+    line-height: 2;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color:#3e0f40;
+    font-size: 10px;
+}
+
+
+.project-box .box p{
+    line-height: 2;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.tools-used{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 25px;
+    justify-content: center;
+}
+
+.tools-used span{
+    background-color: #f8f4f7;
+    border: 1px solid #e77ce9;
+    color: #3e0f40;
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    transition: all 0.3s ease;
+    margin-bottom: 2px;
+}
+
+.tools-used span:hover {
+    background-color: #e77ce9;
+    color: #fff;
+}
+
+
+.project-box .box .project-desc .project-btn{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project-box .box .project-desc .project-btn a{
+    background-color: #493649;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.project-box .box .project-desc .project-btn a:hover{
+    background-color: #d1bad2;
+}
+
+@media(max-width: 768px) {
+    .project-box{
+    grid-template-columns: 1fr;
+    
+    }
+}
+/* PROJECTS */
+
+
+/* CERTIFICATE */
+
+.certificate-section {
+    margin-bottom: 10px;
+    padding: 20px;
+    background-color: #f8f4f7 ;
+    padding-top: 100px
+}
+
+.certificate-section h1{
+    font-size: 40px;
+    color: #3e0f40;
+    font-weight: 700px;
+    text-align: center;
+    font-family: Quientessential;
+}
+.certificate-section .slide h3{
+    font-size: 15px;
+    color: #a53883;
+    font-weight: 100px;
+    text-align: center;
+    font-family: 'sans-serif';
+}
+.certificate-section p{
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-family: 'sans-serif';
+    text-align: center;
+    font-weight: 400;
+    color: #602a60; ; 
+}
+
+.certificate-section .slides img{
+    width: 50%;
+    max-width: 720%px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: contain;
+    display: flex;
+    margin: 0 auto;
+}
+
+.slider {
+    position: relative;
+    width: 70%;
+    margin: 30px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(255, 48, 255, 0.32);
+    background: #f8f4f7;
+    max-width: 800px;
+    border-radius: 20 ;
+    -webkit-border-radius: 20 ;
+    -moz-border-radius: 20 ;
+    -ms-border-radius: 20 ;
+    -o-border-radius: 20 ;
+}
+
+.slides {
+    display: flex;
+    transition: transform 3s ease-in-out;
+    justify-content: center;
+}
+
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    display: none;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.slide.active {
+    display: block;
+}
+
+.caption {
+    padding: 15px;
+    font-size: 60 ;
+    font-weight: 600;
+    font-family: 'sans-serif';
+    color: #3e0f40;
+    text-align: center;
+    padding-top: 20px;
+}
+
+/* Arrows */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(240, 12, 88, 0.5);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+/* CERTIFICATE */
+
+
+/* FOOTER */
+footer{
+    background-color:#f8f4f7;
+    margin-top: -10px;
+    display: flex;
+    padding: 20px;
+    padding-bottom: 5px;
+    justify-content: space-between;
+    align-items: center;
+    color: #000000;
+}
+
+footer p span{
+    font-family: Quintessential;
+}
+
+/* SCROLL TO TOP */
+.scroll-up{
+    position: fixed;
+    bottom: -50px;
+    right: 40px;
+    background-color: #491849;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+
+.scroll-up.scroll-active{
+    bottom: 40px;
+    opacity: 1;
+}
+
+.scroll-up a{
+    color: white;
+}
+
+@media (max-width: 475px){
+    scroll-up{
+    right: 20px;
+    }
+} 
+/* SCROLL TO TOP */
+
+
+
+/* FOOTER */
+
