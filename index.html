@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="./assets/images/cat.png" type="image/x-icon">
+
+
+    <!--LINK BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="dist/css/style.css">
+
+    <!-- FONT POPPINS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FONT QUINTESSENTIAL -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quintessential&display=swap" rel="stylesheet">
+
+    <!-- LINK BOXICONS -->
+    <link rel="stylesheet" href="vendors/boxicons/css/boxicons.min.css">
+
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+    <title>My Potofolio</title>
+    
+</head>
+<body>
+
+    <header>
+    <!-- SECTION -->
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container">
+                <a class="navbar-brand fw-bold" href="#">Laras</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#tentang">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#tools">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#education">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#experience">Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#project">My Project</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#certificate">Certificate</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    </nav>
+
+    <!-- NAVBAR -->
+    <!-- HERO -->
+    <div class="hero">
+        <div id="particles-js"></div>
+        <div class="hero-content">
+            <div class="text-section">
+                <h3>Hai There!</h3>
+                <h1>I'm Rahayu Laras Kinasih</h1>
+                <h2>I'm into <span id="element"></span></h2>
+
+    <!-- Tambahkan Button pertama di sini -->
+                <a href="#tentang" class="btn-about">About Me</a>
+
+    <!-- BUTTON GALERI -->
+                <a  class="btn-galeri" onclick="window.location.href='mygallery.html'">See My Gallery</a>
+
+    
+    <!-- Tambahkan Button Sosial Media di sini -->
+                <div class="social-buttons">
+                    <ul class="social-icons">
+                        <li>
+                            <a href="https://www.linkedin.com/in/rahayu-laras-kinasih/" target="_blank" class="social-link linkedin">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/kinasihlr_?igsh=aGIwMzlnZHgwZjF6" target="_blank" class="social-link instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/Kinasihlr16" target="_blank" class="social-link github">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://wa.me/6281213931567?text=Halo!" target="_blank" class="social-link whatsapp">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=larasrahayu91@gmail.com&su=Halo%20Laras!" target="_blank" class="social-link">
+                                <i class="fa-solid fa-envelope"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="image-section">
+                <img src="assets/images/gambarutama.jpg" alt="Hero Image">
+            </div>
+        </div>
+    </div>
+
+    <!-- HERO -->
+    
+    <!-- WAVES -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f8f4f7" fill-opacity="1" d="M0,32L17.1,32C34.3,32,69,32,103,48C137.1,64,171,96,206,133.3C240,171,274,213,309,213.3C342.9,213,377,171,411,170.7C445.7,171,480,213,514,218.7C548.6,224,583,192,617,192C651.4,192,686,224,720,240C754.3,256,789,256,823,240C857.1,224,891,192,926,181.3C960,171,994,181,1029,181.3C1062.9,181,1097,171,1131,181.3C1165.7,192,1200,224,1234,234.7C1268.6,245,1303,235,1337,234.7C1371.4,235,1406,245,1423,250.7L1440,256L1440,320L1422.9,320C1405.7,320,1371,320,1337,320C1302.9,320,1269,320,1234,320C1200,320,1166,320,1131,320C1097.1,320,1063,320,1029,320C994.3,320,960,320,926,320C891.4,320,857,320,823,320C788.6,320,754,320,720,320C685.7,320,651,320,617,320C582.9,320,549,320,514,320C480,320,446,320,411,320C377.1,320,343,320,309,320C274.3,320,240,320,206,320C171.4,320,137,320,103,320C68.6,320,34,320,17,320L0,320Z"></path></svg>
+    <!-- WAVES -->
+
+    <!-- SCROLL TO TOP -->
+    <div class="scroll-up">
+        <a href="#">
+            <i class="fa-solid fa-arrow-up"></i>
+        </a>
+    </div>
+    <!-- SCROLL TO TOP -->
+
+    </header>
+
+    <!-- TENTANG -->
+    <div class="tentang" id="tentang">
+        <div class="container">
+            <h1 data-aos="fade-up" data-aos-duration="1000">ABOUT ME</h1>
+            <div class="tentang-box">
+                <div class="box">
+                    <img src="assets/images/laras.png" alt="Tentang Image" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300"/>
+                    <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
+                    <p> Hai! Saya Laras. Saat ini saya sedang menempuh studi dari Jurusan Teknik Informatika di Universitas Pelita Bangsa.
+                        Saya tertarik pada Pengembangan web bagian Front-End Development. Saya senang belajar bagaimana cara membangun 
+                        sebuah website yang interaktif dan menarik. Walau saya masih berada di awal perjalanan, saya bersemangat untuk
+                        terus berkembang dan mengubah ketertarikan saya menjadi proyek nyata.
+                    </p> 
+                    <div class="tentang-btn">
+                        <a href="#project">Lihat Daftar Project</a>
+                        <a href="./assets/CV_Rahayu-Laras-Kinasih .pdf">Download My CV</a>
+                    </div>
+                    </div>
+                </div>
+                <div class="box" id="tools">
+                    <h1 data-aos="fade-up" data-aos-duration="1000">MY FAVORITE TOOLS</h1>
+                    <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">Exploring The Tools Behind My Project</p>
+                    <div class="tools">
+                        <div class="tools-box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="350">
+                            <img src="./assets/images/tools/vscode.png" alt="Tools Image">
+                            <div class="tools-desc">
+                                <h3>Visual Studio Code</h3>
+                                <p>Code Editor</p>
+                            </div>
+                        </div>
+                        <div class="tools-box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                            <img src="./assets/images/tools/python.png" alt="Tools Image">
+                            <div class="tools-desc">
+                                <h3>Python</h3>
+                                <p>Language</p>
+                            </div>
+                        </div>
+                        <div class="tools-box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="450">
+                            <img src="./assets/images/tools/tailwind.png" alt="Tools Image" />
+                            <div class="tools-desc">
+                                <h3>Tailwind CSS</h3>
+                                <p>CSS Framework</p>
+                            </div>
+                        </div>
+                        <div class="tools-box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                            <img src="./assets/images/tools/seaborn.webp" alt="Tools Image" />
+                            <div class="tools-desc">
+                                <h3>Seaborn</h3>
+                                <p>Statistical Plotting</p>
+                            </div>
+                        </div>
+                        <div class="tools-box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="450">
+                            <img src="./assets/images/tools/reactjs.png" alt="Tools Image" />
+                            <div class="tools-desc">
+                            <h3>React.JS</h3>
+                            <p>Framework Javascript</p>
+                            </div>
+                        </div>
+                        <div class="tools-box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                            <img src="./assets/images/tools/html.png" alt="Tools Image" />
+                            <div class="tools-desc">
+                            <h3>HTML 5</h3>
+                            <p>Markup Language</p>
+                            </div>
+                        </div>
+                        <div class="tools-box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="550">
+                            <img src="./assets/images/tools/matplotlib.png" alt="Tools Image" />
+                            <div class="tools-desc">
+                            <h3>Matplotlib</h3>
+                            <p>Data Visualization</p>
+                            </div>
+                        </div>
+                        <div class="tools-box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                            <img src="./assets/images/tools/nodejs.png" alt="Tools Image" />
+                            <div class="tools-desc">
+                            <h3>Node.JS</h3>
+                            <p>Runtime Build</p>
+                            </div>
+                        </div>
+                        <div class="tools-box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="650">
+                            <img src="./assets/images/tools/nextjs.png" alt="Tools Image" />
+                            <div class="tools-desc">
+                            <h3>Next.JS</h3>
+                            <p>Framework Javascript</p>
+                            </div>
+                        </div>
+                        <div class="tools-box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700">
+                            <img src="./assets/images/tools/js.png" alt="Tools Image" />
+                            <div class="tools-desc">
+                            <h3>Javascript</h3>
+                            <p>Language</p>
+                            </div>
+                        </div>
+                        <div class="tools-box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="750">
+                            <img src="./assets/images/tools/excell.png" alt="Tools Image" />
+                            <div class="tools-desc">
+                            <h3>Microsoft Excell</h3>
+                            <p>Data Processing & Visualization </p>
+                            </div>
+                        </div>
+                        <div class="tools-box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
+                            <img src="./assets/images/tools/numpy.png" alt="Tools Image" />
+                            <div class="tools-desc">
+                            <h3>NumPy</h3>
+                            <p>Numerical Computing</p>
+                            </div>
+                        </div>
+                        <div class="tools-box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="850">
+                            <img src="./assets/images/tools/github.png" alt="Tools Image" />
+                            <div class="tools-desc">
+                            <h3>Github</h3>
+                            <p>Repository</p>
+                            </div>
+                        </div>
+                        <div class="tools-box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="900">
+                            <img src="./assets/images/tools/figma.png" alt="Tools Image" />
+                            <div class="tools-desc">
+                            <h3>Figma</h3>
+                            <p>Design App</p>
+                            </div>
+                        </div>
+                        <div class="tools-box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="950">
+                            <img src="./assets/images/tools/canva.png" alt="Tools Image" />
+                            <div class="tools-desc">
+                            <h3>Canva</h3>
+                            <p>Design App</p>
+                            </div>
+                        </div>
+                        <div class="tools-box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
+                            <img src="./assets/images/tools/pandas.png" alt="Tools Image" />
+                            <div class="tools-desc">
+                            <h3>Pandas</h3>
+                            <p>Data Manipulation and Analysis</p>
+                            </div>
+                        </div>
+                        <div class="tools-box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1050">
+                            <img src="./assets/images/tools/ai.png" alt="Tools Image" />
+                            <div class="tools-desc">
+                            <h3>Adobe Illustrator</h3>
+                            <p>Design App</p>
+                            </div>
+                        </div>
+                        <div class="tools-box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1100">
+                            <img src="./assets/images/tools/scikitlearn.png" alt="Tools Image" />
+                            <div class="tools-desc">
+                            <h3>Scikit-Learn</h3>
+                            <p>Machine Learning</p>
+                            </div>
+                        </div>
+                        <div class="tools-box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1150">
+                            <img src="./assets/images/tools/bootstrap.png" alt="Tools Image" />
+                            <div class="tools-desc">
+                            <h3>Bootstrap</h3>
+                            <p>CSS Framework</p>
+                            </div>
+                        </div>
+                        <div class="tools-box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1200">
+                            <img src="./assets/images/tools/kotlin.png" alt="Tools Image" />
+                            <div class="tools-desc">
+                            <h3>Kotlin</h3>
+                            <p>Language</p>
+                            </div>
+                        </div>
+                        <div class="tools-box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1250">
+                            <img src="./assets/images/tools/colab.png" alt="Tools Image" />
+                            <div class="tools-desc">
+                            <h3>Google Colab</h3>
+                            <p>Cloud Code Editor</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- EDUCATION -->
+    <div class="education" id="education">
+        <div class="container">
+            <h2 data-aos="fade-up" data-aos-duration="1000">EDUCATION</h2>
+            <h3 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">Education History</h3>
+            <div class="education-box">
+                <div class="box" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="350">
+                    <img src="./assets/images/pelitabangsa.png" alt="Pelita Bangsa University" class="edu-logo">
+                    <div class="education-desc">
+                        <h5 class="fw-bold">Pelita Bangsa University</h5>
+                        <h4>I am currently pursuing my studies at Universitas Pelita Bangsa, a reputable institution located in Cikarang, Indonesia. The university is known for its strong commitment to academic excellence and industry collaboration. Through a balance of theoretical and practical learning, I have gained valuable knowledge and experience that support my professional growth in the field of technology and engineering.
+                            Pelita Bangsa University (UPB) is a private campus resulting from a change in form from the merger between the College of Economics (STIE) and the College of Engineering (STT) in accordance with the Decree of the Minister of National Education of the Republic of Indonesia Number: 664/KPTI/I/2019 dated August 2, 2019.
+                        </h4>
+                        <br>
+                        <br>
+                        <br>
+                        <h2>2021 - Present</h2>
+                    </div>
+                </div>
+                <div class="box" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">
+                    <img src="./assets/images/cipus.png" alt="Pelita Bangsa University" class="edu-logo">
+                    <div class="education-desc">
+                        <h5 class="fw-bold">SMAN 1 Cikarang Pusat</h5>
+                        <h4>I completed my high school education at SMAN 1 Cikarang Pusat, majoring in Natural Science (IPA). During my time there, I developed a strong foundation in scientific and analytical thinking through subjects such as mathematics, physics, chemistry, and biology. The school also provided various opportunities to engage in both academic and extracurricular activities, allowing me to grow in discipline, teamwork, and leadership. This educational background helped me sharpen my logical reasoning and problem-solving skills, which became essential for my academic journey in the field of technology and innovation. My curiosity about how science can be applied in real life also grew during this period, inspiring me to continue my studies in engineering and data-driven fields.</h4><br>
+                        <h2>2018 - 2021</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- EDUCATION -->
+    
+    <!-- EXPERIENCE -->
+    <div class="experience" id="experience">
+        <div class="container">
+            <h1 data-aos="fade-left" data-aos-duration="1000">EXPERIENCE</h1>
+            <h2  data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">My Professional Journey</h2>
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <div class="content" data-aos="fade-up-right" data-aos-duration="1000" data-aos-delay="320">
+                        <h3>PT. Buana Arta Toolindo</h3>
+                        <h4>Web Developer Front-End | Internship</h4>
+                        <p>November 2025 - Present</p>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item right">
+                    <div class="content" data-aos="fade-up-left" data-aos-duration="1000" data-aos-delay="340">
+                        <h3>PT. Denso Manufacturing Indonesia</h3>
+                        <h4>Operator production | Contract </h4>
+                        <p>January 2024 - September 2025</p>
+                    </div> 
+                </div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <div class="content"data-aos="fade-up-right" data-aos-duration="1000" data-aos-delay="360">
+                        <h3>PT. NOK Indonesia</h3>
+                        <h4>Study Lecture Industrial Teaching | Internship</h4>
+                        <p>February 2024 - June 2024</p>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item right">
+                    <div class="content" data-aos="fade-up-left" data-aos-duration="1000" data-aos-delay="380">
+                        <h3>PT. Tempo Scan Pacific Tbk</h3>
+                        <h4>Production Operator | Contract</h4>
+                        <p>October 2022 - July 2023</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- EXPERIENCE -->
+
+    <!-- WAVES -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f8f4f7" fill-opacity="1" d="M0,64L48,85.3C96,107,192,149,288,154.7C384,160,480,128,576,138.7C672,149,768,203,864,229.3C960,256,1056,256,1152,245.3C1248,235,1344,213,1392,202.7L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z" ></path></svg>
+    <!-- WAVES -->
+
+<!-- PROJECT -->
+    <div class="project" id="project">
+        <div class="container">
+            <h1 data-aos="fade-up-right" data-aos-duration="1000">MY LATEST PROJECTS</h1>
+            <div class ="project-box">
+                <div class="box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                    <img src="assets/images/proyek/proyek1.jpg" alt="Proyek Image">
+                    <div class="project-desc">
+                        <h2>Portfolio Website</h2>
+                        <h5>Oktober 2025</h5>
+                        <br>
+                        <p>This project was developed as a personal branding platform to showcase my profile, skills, and professional experiences. The website is designed with a clean, modern, and fully responsive layout to ensure a smooth browsing experience across different devices.
+                        It includes several sections such as an about page, a portfolio gallery, and a contact form that allows visitors to reach out easily. Through this website, I aim to build a strong digital identity, highlight my work, and provide potential clients or collaborators with a clear overview of who I am and what I do. </p>
+                        <div class="tools-used">
+                            <span>HTML 5</span>
+                            <span>CSS</span>
+                            <span>VISUAL STUDIO CODE</span>
+                            <span>BOOTSTRAP 5</span>
+                            <span>JAVA SCRIPT</span>
+                        </div>
+                        <br>
+                        <div class="project-btn">
+                            <a href="#">Click Here</a>
+                            <a href="https://github.com/Kinasihlr16">Github</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                    <img src="assets/images/proyek/proyek2.jpg" alt="Proyek Image">
+                    <div class="project-desc">
+                        <h2>Data Analyst Study Case</h2>
+                        <h5>September 2025</h5>
+                        <br>
+                        <p>This project focuses on analyzing transactional data from a bakery shop to gain a better understanding of its daily sales activities. The dataset includes information such as transaction date, time, product name, quantity, and unit price in euros.
+                            The main objective of this analysis is to identify best-selling products, observe customer purchasing patterns, and determine the busiest days and hours of operation. By exploring these insights, the project aims to help the bakery make data-driven decisions to improve sales performance and optimize business strategies.</p>
+                        <div class="tools-used">
+                            <span>GOOGLE COLAB</span>
+                            <span>PYTHON</span>
+                            <span>NUMPY</span>
+                            <span>PANDAS</span>
+                            <span>MATPLOTLIB</span>
+                            <span>SEABORN</span>
+                        </div>
+                        <br>
+                        <div class="project-btn">
+                            <a href="https://github.com/Kinasihlr16/Data-Analyst-Bakery-Shop.git">Click Here</a>
+                            <a href="https://colab.research.google.com/drive/1BK20wpD2TpAQ-oDfPFXFicEeFbIIgDr2?usp=sharing">Google Colab</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                    <img src="assets/images/proyek/proyek3.jpeg" alt="Proyek Image">
+                    <div class="project-desc">
+                        <br>
+                        <h2>Android TV World Of Animal</h2>
+                        <h5>March 2023 - July 2023</h5>
+                        <br>
+                        <p>This project is an Android TV application designed to provide an engaging and educational experience about the animal world. It offers users an interactive way to explore different species, learn fun facts, and enjoy high-quality visuals and media content related to animals.
+                        Built with a user-friendly interface optimized for TV screens, the app focuses on delivering an immersive learning experience suitable for users of all ages. Through this project, I aimed to combine technology and education to create an accessible and entertaining platform that sparks curiosity about wildlife.</p>
+                        <br>
+                        <div class="tools-used">
+                            <span>ANDROID DEVELOPMENT</span>
+                            <span>REACT.JS</span>
+                            <span>VISUAL STUDIO CODE</span>
+                            <span>ANDROID STUDIO</span>
+                            <span>NODE.JS</span>
+                            <span>JSON</span>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="project-btn">
+                            <a href="#">Click Here</a>
+                            <a href="https://github.com/Kinasihlr16">Github</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                    <img src="assets/images/proyek/proyek4.png" alt="Proyek Image">
+                    <div class="project-desc">
+                        <h2>Optimasi Kinerja Analisis Kernel Support Vector Machine (SVM) Untuk Klasifikasi Operasi Caesar Persalinan</h2>
+                        <h5>June 2025</h5>
+                        <p>This project focuses on optimizing the performance of the Support Vector Machine (SVM) algorithm in classifying cesarean section operations based on medical and maternal data. The main objective is to enhance the model’s accuracy and efficiency by analyzing and comparing different kernel functions, such as linear, polynomial, and radial basis function (RBF) kernels.
+                        Through a series of experiments and parameter tuning, the project aims to identify the most effective kernel configuration for predicting the likelihood of a cesarean delivery. The results provide valuable insights for improving decision-making processes in healthcare data analysis, particularly in the field of maternal health and medical prediction systems.</p>
+                        <div class="tools-used">
+                            <span>PYTHON</span>
+                            <span>GOOGLE COLAB</span>
+                            <span>NUMPY</span>
+                            <span>PANDAS</span>
+                            <span>SVM</span>
+                            <span>MATPLOTLIB</span>
+                        </div>
+                        <br>
+                        <div class="project-btn">
+                            <a href="https://github.com/Kinasihlr16/Caesarean-Prediction.git">Click Here</a>
+                            <a href="https://github.com/Kinasihlr16">Github</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- WAVES -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f8f4f7" fill-opacity="1" d="M0,32L17.1,32C34.3,32,69,32,103,48C137.1,64,171,96,206,133.3C240,171,274,213,309,213.3C342.9,213,377,171,411,170.7C445.7,171,480,213,514,218.7C548.6,224,583,192,617,192C651.4,192,686,224,720,240C754.3,256,789,256,823,240C857.1,224,891,192,926,181.3C960,171,994,181,1029,181.3C1062.9,181,1097,171,1131,181.3C1165.7,192,1200,224,1234,234.7C1268.6,245,1303,235,1337,234.7C1371.4,235,1406,245,1423,250.7L1440,256L1440,320L1422.9,320C1405.7,320,1371,320,1337,320C1302.9,320,1269,320,1234,320C1200,320,1166,320,1131,320C1097.1,320,1063,320,1029,320C994.3,320,960,320,926,320C891.4,320,857,320,823,320C788.6,320,754,320,720,320C685.7,320,651,320,617,320C582.9,320,549,320,514,320C480,320,446,320,411,320C377.1,320,343,320,309,320C274.3,320,240,320,206,320C171.4,320,137,320,103,320C68.6,320,34,320,17,320L0,320Z"></path></svg>
+<!-- WAVES -->
+
+<!-- CERTIFICATE -->
+
+<section class="certificate-section" id="certificate">
+    <h1>MY CERTIFICATES</h1>
+    <p>Showcasing My Achievements And Certifications</p>
+
+        <div class="slider">
+            <div class="slides">
+
+                <!-- Slide 1 -->
+                <div class="slide active">
+                    <img src="./assets/images/certificate/certificate1.jpg" alt="Certificate 1">
+                    <h3 class="caption">Intro To Data Analyst by Revou</h3>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="slide">
+                    <img src="./assets/images/certificate/certificate2.jpg" alt="Certificate 2">
+                    <h3 class="caption">Softskills and Greenskills Training "Futuremakers Youth Employability Programme"</h3>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="slide">
+                    <img src="./assets/images/certificate/certificate3.png" alt="Certificate 3">
+                    <h3 class="caption">Intensive Class Data Analyst by Specialskill</h3>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="slide">
+                    <img src="./assets/images/certificate/certificate4.jpg" alt="Certificate 3">
+                    <h3 class="caption">Free Class Belajar C++ Dari Nol by Dilesin</h3>
+                </div>
+
+                <!-- Slide 5 -->
+                <div class="slide">
+                    <img src="./assets/images/certificate/certificate7.jpg" alt="Certificate 3">
+                    <h3 class="caption">Prompt Engineering Untuk Software Developer by Dicoding</h3>
+                </div>
+                
+                <!-- Slide 6 -->
+                <div class="slide">
+                    <img src="./assets/images/certificate/certificate5.jpg" alt="Certificate 3">
+                    <h3 class="caption">Online English Class by Andalusia</h3>
+                </div>
+
+                <!-- Slide 7 -->
+                <div class="slide">
+                    <img src="./assets/images/certificate/certificate6.jpg" alt="Certificate 3">
+                    <h3 class="caption">Belajar AI Dasar by Dicoding</h3>
+                </div>
+
+            </div>
+
+            <!-- Navigation Arrows -->
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+            
+        </div>
+</section>
+
+
+<!-- CERTIFICATE -->
+
+
+
+
+
+<!-- PROJECT -->
+
+<!-- FOOTER -->
+
+<footer>
+    <P>&COPY; Copyright 2025 <span>by Kinasihlr_</span></P>
+
+</footer>
+
+<!-- FOOTER -->
+
+
+
+
+    <!-- JS -->
+    <script src="./dist/js/script.js"></script>
+
+    <!-- TYPE JS -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed('#element', {
+            strings: ["Front End Developer", "UI/UX Design", "Data Scientist"],
+            typeSpeed: 50,
+            loop: true,
+            backSpeed: 50,
+            showCursor: false,
+            backDelay: 1,
+        });
+    </script>
+
+    <script>
+  // Pastikan variabel tidak dideklarasikan dua kali
+    document.addEventListener("DOMContentLoaded", () => {
+        const navLinks = document.querySelectorAll(".nav-link");
+        const navbarCollapse = document.querySelector(".navbar-collapse");
+
+        navLinks.forEach(link => {
+            link.addEventListener("click", () => {
+                const collapse = new bootstrap.Collapse(navbarCollapse, {
+                    toggle: true
+                });
+            });
+        });
+    });
+</script>
+
+<!-- NAVLINK -->
+    <script>
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+            // Hapus kelas 'active' dari semua nav-link
+            navLinks.forEach(item => item.classList.remove('active'));
+            // Tambahkan 'active' ke link yang diklik
+            this.classList.add('active');
+        });
+    });
+</script>>
+
+    
+<!-- SLIDER CERTIFICTAE -->
+
+<script>
+let currentSlide = 0;
+const slides = document.querySelectorAll('.slide');
+const totalSlides = slides.length;
+
+document.querySelector('.next').addEventListener('click', () => {
+    moveSlide(1);
+});
+document.querySelector('.prev').addEventListener('click', () => {
+    moveSlide(-1);
+});
+
+// Fungsi untuk pindah slide
+function moveSlide(direction) {
+    slides[currentSlide].classList.remove('active');
+    currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+    slides[currentSlide].classList.add('active');
+}
+
+// Auto-play setiap 5 detik
+setInterval(() => {
+    moveSlide(1);
+}, 2000);
+</script>
+<!-- SLIDER CERTIFICTAE -->
+
+
+<!-- PARTIKEL JS ANIMASI -->
+
+<!-- Script Particles.js -->
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script>
+    particlesJS("particles-js", {
+        "particles": {
+        "number": { "value": 60 },
+        "color": { "value": "#602a60" },
+        "line_linked": { "enable": true, "color": "#aa5092" },
+        "move": { "speed": 2 },
+        "size": { "value": 3 }
+        }
+    });
+</script>
+
+<!-- PARTIKEL JS ANIMASI -->
+
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
+
+
+
+</body>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>
+
